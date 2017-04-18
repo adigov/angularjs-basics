@@ -17,7 +17,7 @@
         var message = '';
 
         lunchItemsList.forEach(function (item) {
-          if (item === "") totalItems -= 1;
+          if (item.trim() === "") totalItems -= 1;
         });
 
         if (totalItems && totalItems <= 3) {
